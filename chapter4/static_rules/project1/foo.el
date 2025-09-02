@@ -1,0 +1,2 @@
+Hi from foo.el
+
