@@ -36,8 +36,8 @@ $(OBJ_DIR):
 # -------------------------------
 # Use the multi-line variable
 # -------------------------------
-.PHONY:clean
-clean : $(TARGET)
+.PHONY:run
+run : $(TARGET)
 	$(run_and_clean)
 
 
