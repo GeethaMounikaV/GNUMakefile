@@ -1,61 +1,74 @@
-📘 Makefile Examples
+# 📘 Makefile Examples
 
-This repository contains example Makefiles and exercises derived from GNU Make reference materials (make.pdf). The purpose of this project is to demonstrate progressive usage of Makefiles, starting from the basics (chapter 3) to intermediate (chapter 4) and advanced concepts (chapter 5).
+> A step-by-step collection of GNU Makefile examples, from basic rules to advanced techniques.  
+> Based on exercises derived from `make.pdf`.
 
-📂 Repository Structure
+---
 
-chapter3/ – Basic rules, variables, and simple compilations.
+## 📂 Repository Structure
 
-chapter4/ – Pattern rules, automatic variables, and modular builds.
+- **`chapter3/` – Writing Makefiles**  
+- **`chapter4/` – Writing Rules**  
+- **`chapter5/` – Writing the Commands in Rules**  
+- **`chapter6/` – How to Use Variables**  
+- **`chapter7/` – Conditional Parts of Makefiles**  
+- **`extra/` – Additional helper examples**  
+- **`make.pdf` – Reference guide used for building these examples**
 
-chapter5/ – Functions, conditionals, and reusable Makefile techniques.
+---
 
-extra/ – Additional helper examples.
+## 📖 Chapter Descriptions
 
-make.pdf – Reference guide used for building these examples.
+### 📌 Chapter 3 – Writing Makefiles
+- **Folder:** `chapter3/`  
+- **Focus:** Introduction to writing Makefiles from scratch.  
+- **Topics:**  
+  - Basic structure of a Makefile  
+  - Defining targets and dependencies  
+  - Writing simple rules and commands  
+- **Goal:** Learn how to create a functional Makefile that automates compilation.
 
-🚀 How to Use
+### 📌 Chapter 4 – Writing Rules
+- **Folder:** `chapter4/`  
+- **Focus:** Detailed understanding of rules in Makefiles.  
+- **Topics:**  
+  - Target, prerequisites, and commands  
+  - Phony targets  
+  - Using tabs correctly for commands  
+- **Goal:** Understand how Make executes rules and manages dependencies.
 
-Clone the repository:
+### 📌 Chapter 5 – Writing the Commands in Rules
+- **Folder:** `chapter5/`  
+- **Focus:** Commands executed by Make.  
+- **Topics:**  
+  - Empty commands and command strings  
+  - Multi-line commands  
+  - Handling errors in rules  
+- **Goal:** Learn to write robust commands and control the build process effectively.
 
-git clone <your-repo-url>
-cd Makefile
+### 📌 Chapter 6 – How to Use Variables
+- **Folder:** `chapter6/`  
+- **Focus:** Makefile variables.  
+- **Topics:**  
+  - Defining and using variables  
+  - Substitution, appending, overriding variables  
+  - Environment variables in Makefiles  
+- **Goal:** Make your Makefiles flexible, reusable, and easy to maintain.
 
+### 📌 Chapter 7 – Conditional Parts of Makefiles
+- **Folder:** `chapter7/`  
+- **Focus:** Conditional constructs for advanced builds.  
+- **Topics:**  
+  - `ifeq`, `ifneq`, `ifdef`, `ifndef`  
+  - Using conditions to control compilation  
+  - Optional targets and platform-specific builds  
+- **Goal:** Write adaptable Makefiles that respond to different environments and conditions.
 
-Navigate to any chapter folder:
+---
 
-cd chapter3
+## 🚀 Getting Started
 
-
-Run the Makefile:
-
-make
-
-
-Clean build files (if defined):
-
-make clean
-
-✨ Features Demonstrated
-
-Basic target/dependency rules.
-
-Variable usage and substitution.
-
-Pattern rules with wildcards.
-
-Automatic variables ($@, $<, $^).
-
-Functions like subst, patsubst, and wildcard.
-
-Conditional compilation using ifeq/ifneq.
-
-🎯 Purpose
-
-This repository is meant for:
-
-Learning and practicing GNU Make step by step.
-
-Serving as a quick reference guide for common Makefile constructs.
-
-Providing ready-to-run examples for students and developers.
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/GeethaMounikaV/GNUMakefile.git
+cd GNUMakefile
