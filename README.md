@@ -17,52 +17,29 @@
 
 ---
 
-## 📖 Chapter Descriptions
-
-### 📌 Chapter 3 – Writing Makefiles
+### Chapter 3
 - **Folder:** `chapter3/`  
-- **Focus:** Introduction to writing Makefiles from scratch.  
-- **Topics:**  
-  - Basic structure of a Makefile  
-  - Defining targets and dependencies  
-  - Writing simple rules and commands  
-- **Goal:** Learn how to create a functional Makefile that automates compilation.
+- **Topics:** Basic structure of a Makefile, Defining targets and dependencies, Writing simple rules and commands  
 
-### 📌 Chapter 4 – Writing Rules
+### Chapter 4
 - **Folder:** `chapter4/`  
-- **Focus:** Detailed understanding of rules in Makefiles.  
-- **Topics:**  
-  - Target, prerequisites, and commands  
-  - Phony targets  
-  - Using tabs correctly for commands  
-- **Goal:** Understand how Make executes rules and manages dependencies.
+- **Topics:** Target, prerequisites, and commands, Phony targets, Using tabs correctly for commands  
 
-### 📌 Chapter 5 – Writing the Commands in Rules
+### Chapter 5
 - **Folder:** `chapter5/`  
-- **Focus:** Commands executed by Make.  
-- **Topics:**  
-  - Empty commands and command strings  
-  - Multi-line commands  
-  - Handling errors in rules  
-- **Goal:** Learn to write robust commands and control the build process effectively.
+- **Topics:** Empty commands and command strings, Multi-line commands, Handling errors in rules  
 
-### 📌 Chapter 6 – How to Use Variables
+### Chapter 6
 - **Folder:** `chapter6/`  
-- **Focus:** Makefile variables.  
-- **Topics:**  
-  - Defining and using variables  
-  - Substitution, appending, overriding variables  
-  - Environment variables in Makefiles  
-- **Goal:** Make your Makefiles flexible, reusable, and easy to maintain.
+- **Topics:** Defining and using variables, Substitution, appending, overriding variables, Environment variables in Makefiles  
 
-### 📌 Chapter 7 – Conditional Parts of Makefiles
+### Chapter 7
 - **Folder:** `chapter7/`  
-- **Focus:** Conditional constructs for advanced builds.  
-- **Topics:**  
-  - `ifeq`, `ifneq`, `ifdef`, `ifndef`  
-  - Using conditions to control compilation  
-  - Optional targets and platform-specific builds  
-- **Goal:** Write adaptable Makefiles that respond to different environments and conditions.
+- **Topics:** `ifeq`, `ifneq`, `ifdef`, `ifndef`, Using conditions to control compilation, Optional targets and platform-specific builds  
+
+### Chapter 8
+- **Folder:** `chapter8/`  
+- **Topics:** Functions for text and string manipulation, `strip`, `subst`, `patsubst`, `findstring`, `filter`, `sort`  
 
 ---
 
