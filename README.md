@@ -1,4 +1,3 @@
-=======
 📘 Makefile Examples
 
 This repository contains example Makefiles and exercises derived from GNU Make reference materials (make.pdf). The purpose of this project is to demonstrate progressive usage of Makefiles, starting from the basics (chapter 3) to intermediate (chapter 4) and advanced concepts (chapter 5).
@@ -60,4 +59,3 @@ Learning and practicing GNU Make step by step.
 Serving as a quick reference guide for common Makefile constructs.
 
 Providing ready-to-run examples for students and developers.
->>>>>>> 0d490c4 (Add readme)
