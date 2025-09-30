@@ -1,19 +1,12 @@
-# Toggle this variable with values 0 or 1
-# 1 --> foo.c
-# 0 --> bar.c
-USE_FOO = 0
-
+MODE = RELEASE
 CC = gcc
 CFLAGS = -Wall
 
-# Conditional compilation
-ifeq ($(USE_FOO),1)
+ifeq ($(MODE),DEBUG)
 SRC = main.c foo.c
-CFLAGS += -DINCLUDE_FOO
-$(info Compiling with foo.c)
-else
+CFLAGS += -DDEBUG_MODE   # define macro for main.c
+else ifeq ($(MODE),RELEASE)
 SRC = main.c bar.c
-$(info Compiling with bar.c)
 endif
 
 all:

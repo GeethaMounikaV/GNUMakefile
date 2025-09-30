@@ -1,12 +1,10 @@
-INCLUDE_FOO = yes
 CC = gcc
 CFLAGS = -Wall
 
-ifdef INCLUDE_FOO
-SRC = main.c foo.c
-CFLAGS += -DINCLUDE_FOO
-else
+ifndef USE_FOO
 SRC = main.c bar.c
+else
+SRC = main.c foo.c
 endif
 
 all:
