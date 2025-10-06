@@ -1,4 +1,4 @@
-MODE = RELEASE
+MODE = DEBUG
 CC = gcc
 CFLAGS = -Wall
 
