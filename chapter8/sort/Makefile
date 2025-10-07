@@ -1,38 +1,33 @@
+# Compiler
+CC = gcc
+CFLAGS = -Wall -O2 -Isrc -Iextra
 
-INCLUDES = -Isrc -Iextra -Isrc   # accidentally repeated
-INCLUDES := $(sort $(INCLUDES))  # dedupe + order
+# Sources
+SRC_DIR = src
+EXTRA_DIR = extra
 
-CFLAGS = -Wall -O2 $(INCLUDES)
+# Object files
+OBJS = $(EXTRA_DIR)/startup.o \
+       $(SRC_DIR)/main.o \
+       $(SRC_DIR)/mathutils.o
 
-
-# Sources collected from multiple dirs (duplicates possible!)
-SOURCES = src/main.c src/mathutils.c extra/startup.s extra/mathutils.c src/mathutils.c
-
-# Clean them up using sort (dedupe + order)
-UNIQ_SOURCES = $(sort $(SOURCES))
-
-# Convert to objects
-OBJECTS = $(UNIQ_SOURCES:.c=.o)
-OBJECTS := $(OBJECTS:.s=.o)
-
+# Target executable
 TARGET = myprog
 
+# Build rule
 all: $(TARGET)
 
-$(TARGET): $(OBJECTS)
-	$(CC) $(CFLAGS) -o $@ $^
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) -o $@ $(OBJS)
 
-%.o: %.c
+# Compile source files to object files
+$(SRC_DIR)/%.o: $(SRC_DIR)/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-%.o: %.s
-	$(CC) -c $< -o $@
+$(EXTRA_DIR)/%.o: $(EXTRA_DIR)/%.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
-show-vars:
-	@echo "SOURCES     = $(SOURCES)"
-	@echo "UNIQ_SOURCES= $(UNIQ_SOURCES)"
-	@echo "OBJECTS     = $(OBJECTS)"
-
+# Clean rule
 clean:
-	rm -f $(OBJECTS) $(TARGET)
+	rm -f $(OBJS) $(TARGET)
 
